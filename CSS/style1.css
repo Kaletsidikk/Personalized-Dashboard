@@ -1,0 +1,359 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../Images/bk.jpeg);
+    background-size: cover;
+  }
+  .container {
+    width: 100%;
+  }
+  .container nav {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container nav .logo {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+  }
+  .container nav .logo a{
+    text-decoration: none;
+    font-size: 42px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+    color: #ff934b;
+    transition: 500ms;
+  }
+  .container nav .logo a:hover{
+    color: #c54f00;
+    transition: 500ms;
+  }
+  
+  .container nav .lists {
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .container nav .lists ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-right: 30px;
+  }
+  .container nav .lists ul li {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 500ms;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .container nav .lists ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    transition: 500ms;
+  }
+  .container nav .lists ul .hidden1,
+  .container nav .lists ul .hidden2,
+  .container nav .lists ul .hidden3,
+  .container nav .lists ul .hidden4{
+    display: none;
+  }
+  .container nav .lists ul .visible{
+    display: flex;
+  }
+  .container nav .lists ul .active a,
+  .container nav .lists ul li:hover a {
+    color: #ff934b;
+    transition: 500ms;
+  }
+  .container nav .search1{
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-right: 50px;
+  }
+  .container nav .search1 input{
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    border: 1px solid #ff934b;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 10px;
+    outline: none;
+  }
+  .container nav .search1 input::placeholder{
+    color: #fff;
+  }
+  .container nav .search1 i{
+    width: 40px;
+    height: 40px;
+    background: #ff934b;
+    color: #fff;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    transition: 500ms;
+  }
+  .container nav .search1 i:hover{
+    color: #000;
+    transition: 500ms;
+  }
+  .container nav .hide_search{
+    display: none;
+  }
+  
+  .container nav .btn{
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .container nav .btn button{
+    width: 100px;
+    height: 40px;
+    background: #ff934b;
+    border: 1px solid #ff934b;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    transition: 500ms;
+  }
+  .container nav .btn button:hover{
+    background: transparent;
+    color: #fff;
+    transition: 500ms;
+  }
+  .container nav .btn_active{
+    display: flex;
+  }
+  /* -------------------------------------------------------------------------- */
+  /* ----------------------------------- Home ------------------------------- */
+  /* -------------------------------------------------------------------------- */
+  .content {
+    width: 100%;
+    height: calc(100vh - 90px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .content .left {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content .left h1 {
+    width: 80%;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 1000;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    letter-spacing: 0.05em;
+    margin-top: -40px;
+  }
+  .content .left h1 span{
+    color: #ff934b;
+  }
+  .content .left p {
+    width: 80%;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 500;
+    margin-top: -20px;
+  }
+  .content .left .btns {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -50px;
+  }
+  .content .left button {
+    width: 45%;
+    height: 60px;
+    border: 2px solid #ff934b;
+    border-radius: 10px;
+    background:#ff934b;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+    transition: 600ms;
+  }
+  .content .left button:hover {
+    background: transparent;
+    transition: 800ms;
+    color: #fff;
+  }
+  .content .right {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+  }
+  .right .form{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ff934b;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+  }
+  .right .form h2{
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+  }
+  .right .form input{
+    width: 80%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    transition: 500ms;
+  }
+  .right .form input::placeholder{
+    color: #fff;
+  }
+  .right .form .email{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .right .form .email i{
+    color: #fff;
+    margin-left: -15px;
+  }
+  .right .form .password{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .right .form .password i{
+    color: #fff;
+    margin-left: -15px;
+  }
+  .right .form button{
+    width: 80%;
+    height: 40px;
+    background: #ff934b;
+    border: 1px solid #ff934b;
+    border-radius: 5px;
+    color: #000;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    transition: 500ms;
+    margin-top: 10px;
+  }
+  .right .form button:hover{
+    background: transparent;
+    color: #fff;
+    transition: 500ms;
+  }
+  .right .form .more{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .right .form .more p{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .right .form .more p a{
+    color: #ff934b;
+    transition: 500ms;
+  }
+  .right .form .more p a:hover{
+    color: #c54f00;
+    transition: 500ms;
+  }
+  .right .form .socials{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .right .form .socials p{
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+  }
+  .right .form .socials ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+  }
+  .right .form .socials ul li{
+    list-style: none;
+    margin: 0;
+  }
+  .right .form .socials ul li i{
+    color: #fff;
+    cursor: pointer;
+    font-size: 26px !important;
+    transition: 500ms;
+  }
+  .right .form .socials ul li i:hover{
+    color: #ff934b;
+    transition: 500ms;
+  }
+
+  /* ----------------------------- */
+  .login_disappear{
+    display: none !important;
+  }
