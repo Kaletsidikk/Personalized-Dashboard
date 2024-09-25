@@ -1,0 +1,816 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../Images/bk1.jpg);
+    background-size: cover;
+    overflow-x: hidden;
+  }
+  .container {
+    width: 100%;
+  }
+  .container nav {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .container nav .logo {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+  }
+  .container nav .logo a{
+    text-decoration: none;
+    font-size: 36px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+    color: #ff934b;
+    transition: 500ms;
+  }
+  .container nav .logo a:hover{
+    color: #c54f00;
+    transition: 500ms;
+  }
+  
+  .container nav .lists {
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .container nav .lists ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-right: 30px;
+  }
+  .container nav .lists ul li {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 500ms;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .container nav .lists ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    transition: 500ms;
+  }
+  .container nav .lists ul .active a,
+  .container nav .lists ul li:hover a {
+    color: #ff934b;
+    transition: 500ms;
+  }
+  .container nav .search{
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-right: 50px;
+  }
+  .container nav .search input{
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    border: 1px solid #ff934b;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 10px;
+    outline: none;
+  }
+  .container nav .search input::placeholder{
+    color: #fff;
+  }
+  .container nav .search i{
+    width: 40px;
+    height: 40px;
+    background: #ff934b;
+    color: #fff;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    transition: 500ms;
+  }
+  .container nav .search i:hover{
+    color: #000;
+    transition: 500ms;
+  }
+  
+  /* -------------------------------------------------------------------------- */
+  /* ----------------------------------- Immunization ------------------------------- */
+  /* -------------------------------------------------------------------------- */
+  .main_content{
+    width: 100%;
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .immune{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 2px;
+  }
+  .immune h2{
+    color: #000;
+  }
+  .immune table{
+    width: 100%;
+    overflow: scroll;
+  }
+  .immune table tr {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .immune table tr th{
+    border: 1px solid #000;
+  }
+  .immune table tr td{
+    width: 10%;
+    height: 20px;
+    overflow: hidden;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .immune table tr td input{
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+  .immune table tr .first{
+    width: 35%;
+    overflow: hidden;
+  }
+  .immune table tr .last{
+      width: 35%;
+      overflow: hidden;
+  }
+  .main_content button{
+      width: 200px;
+      height: 40px;
+      background: #ff934b;
+      border: none;
+      font-size: 16px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 500ms;
+      margin-top: 20px;
+  }
+  .main_content button:hover{
+      background: #dd5800;
+      transition: 800ms;
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* ----------------------------------- Medication ------------------------------- */
+  /* -------------------------------------------------------------------------- */
+  .medication{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .medication .sheet{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #fff;
+    margin-top: 5px;
+  }
+  .medication .sheet h2{
+    color: #000;
+  }
+  .medication .sheet .header{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+  }
+  .medication .sheet .header .right,
+  .medication .sheet .header .left{
+      width: 48%;
+      height: 30px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border: 1px solid #000;
+  }
+  .medication .sheet .header .right p,
+  .medication .sheet .header .left p{
+      font-family: cursive;
+      margin-left: 5px;
+  }
+  .medication .sheet .header .right input,
+  .medication .sheet .header .left input{
+      width: 70%;
+      height: 20px;
+      border: none;
+      border-bottom: 1px solid #000;
+      background: none;
+      outline: none;
+      margin-left: 5px;
+  }
+  .medication .sheet table{
+      width: 95%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  .medication .sheet table .first{
+      height: 60px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+  .medication .sheet table .first th{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #000;
+  }
+  .medication .sheet table .first th p{
+      margin: 0;
+      font-family: cursive;
+      color: red;
+  }
+  .medication .sheet table .first th textarea{
+    border: none;
+    background: #f7f7f7;
+    outline: none;
+    width: 95%;
+    height: 35px;
+  }
+  .medication .sheet table .second{
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.medication .sheet table .second th{
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+.medication .sheet table .second th p{
+    margin: 0;
+    font-family: cursive;
+    color: #3ef2ff;
+}
+.medication .sheet table .second th textarea{
+    border: none;
+    background: #f7f7f7;
+    outline: none;
+    width: 95%;
+    height: 70px;
+}
+.medication .sheet table .third{
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.medication .sheet table .third th{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+.medication .sheet table .third .one{
+    width: 66.3%;
+}
+.medication .sheet table .third .two{
+    width: 33%;
+}
+.medication .sheet table .third th p{
+    margin: 0;
+    font-family: cursive;
+    color: green;
+}
+.medication .sheet table .third th textarea{
+    border: none;
+    background: #f7f7f7;
+    outline: none;
+    width: 95%;
+    height: 70px;
+}
+.medication .sheet table .four{
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.medication .sheet table .four th{
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid #000;
+}
+.medication .sheet table .four th p{
+    margin: 0;
+    font-family: cursive;
+    color: #ffe02f;
+}
+.medication .sheet table .four th textarea{
+  border: none;
+  background: #f7f7f7;
+  outline: none;
+  width: 95%;
+  height: 40px;
+}
+.medication button{
+    width: 200px;
+    height: 40px;
+    background: #ff934b;
+    border: none;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 500ms;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.medication button:hover{
+    background: #dd5800;
+    transition: 800ms;
+}
+  /* -------------------------------------------------------------------------- */
+  /* ------------------------- Medical History Record ------------------------- */
+  /* -------------------------------------------------------------------------- */
+  .medical{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .medical .sheet{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #ffffff;
+    margin-top: 5px;
+  }
+  .medical .sheet h2{
+    font-size: 36px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: #000;
+  }
+
+  .medical .sheet .header{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: -25%;
+  }
+  .medical .sheet .header input{
+    width: 95%;
+    height: 25px;
+    border: 1px solid #000;
+    outline: none;
+    background: #93b5d1;
+    margin: 0;
+  }
+  .medical .sheet .header p{
+    margin: 0;
+  }
+  .medical .sheet .header .top{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .medical .sheet .header .top .left{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .medical .sheet .header .top .right{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .medical .sheet .body1{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .medical .sheet .body1 h2{
+    font-size: 24px;
+    margin: 0;
+  }
+  .medical .sheet .body1 table{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .medical .sheet .body1 table .top1,
+  .medical .sheet .body1 table .top2{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .medical .sheet .body1 table tr th{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    overflow: hidden;
+  }
+  .medical .sheet .body1 table tr .first{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+  }
+  .medical .sheet .body1 table tr .middle,
+  .medical .sheet .body1 table tr .last{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+  }
+  .medical .sheet .body1 table tr input{
+    width: 98%;
+    height: 95%;
+    border: none;
+    outline: none;
+    background: none;
+  }
+  .medical .sheet .body1 table .top2 th,
+  .medical .sheet .body1 table .top2 .middle,
+  .medical .sheet .body1 table .top2 .last,
+  .medical .sheet .body1 table .top2 .first{
+    border: none;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+  }
+  .medical .sheet .body2{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .medical .sheet .body2 h2{
+    font-size: 24px;
+    margin: 0;
+  }
+  .medical .sheet .body2 table{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .medical .sheet .body2 table .top1,
+  .medical .sheet .body2 table .top2{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .medical .sheet .body2 table tr th{
+    width: 12.5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    overflow: hidden;
+  }
+  .medical .sheet .body2 table tr .first{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+  }
+  .medical .sheet .body2 table tr .middle,
+  .medical .sheet .body2 table tr .last{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+  }
+  .medical .sheet .body2 table tr input{
+    width: 98%;
+    height: 95%;
+    border: none;
+    outline: none;
+    background: none;
+  }
+  .medical .sheet .body2 table .top2 th,
+  .medical .sheet .body2 table .top2 .middle,
+  .medical .sheet .body2 table .top2 .last,
+  .medical .sheet .body2 table .top2 .first{
+    border: none;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+  }
+  .medical button{
+    width: 150px;
+    height: 40px;
+    background: #ff934b;
+    border: 1px solid #ff934b;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 500ms;
+  }
+  .medical button:hover{
+    background: transparent;
+    transition: 500ms;
+  }
+  /* -------------------------------------------------------------------------- */
+  /* ----------------------------------- Lab Record ------------------------------- */
+  /* -------------------------------------------------------------------------- */
+  .lab{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .lab .sheet{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgb(255, 226, 209);
+    margin-top: 5px;
+  }
+  .lab .sheet .top{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .lab .sheet .top .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .lab .sheet .top .left h1{
+    color: #ff4828;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .lab .sheet .top .left ul{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .lab .sheet .top .left ul li{
+    margin-top: 5px;
+  }
+  .lab .sheet .top .right p{
+    font-weight: 600;
+    margin-right: 15px;
+  }
+
+  .lab .sheet h2{
+    font-size: 36px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: #000;
+  }
+
+  .lab .sheet .header{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .lab .sheet .header input{
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    background: none;
+  }
+  .lab .sheet .header .top1{
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+  }
+  .lab .sheet .header .top1 input{
+    width: 85%;
+  }
+  .lab .sheet .header .top2{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .lab .sheet .header .top2 .left,
+  .lab .sheet .header .top2 .right{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .lab .sheet .header .top3{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+  }
+  .lab .sheet .header .top3 .left,
+  .lab .sheet .header .top3 .right{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .lab .sheet .header .top3 input{
+    width: 70%;
+  }
+  .lab .sheet .body{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .lab .sheet .body h2{
+    font-size: 24px;
+    margin: 0;
+  }
+  .lab .sheet .body table{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .lab .sheet .body table .first{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .lab .sheet .body table tr th{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+  }
+  .lab .sheet .body table tr {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .lab .sheet .body table tr td{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+  }
+  .lab .sheet .body table tr td input{
+    width: 98%;
+    height: 95%;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    background: none;
+  }
+  .lab .sheet .footer{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .lab .sheet .footer h2{
+    font-size: 16px;
+    margin: 0;
+  }
+  .lab .sheet .footer textarea{
+    width: 100%;
+    height: 60px;
+    background: none;
+  }
+  .lab .sheet .footer .signature{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lab .sheet .footer .signature input{
+    width: 160px;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    background: none;
+  }
+  .lab button{
+    width: 150px;
+    height: 40px;
+    background: #ff934b;
+    border: 1px solid #ff934b;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: 500ms;
+  }
+  .lab button:hover{
+    background: transparent;
+    transition: 500ms;
+  }

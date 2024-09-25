@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style1.css" />
+    <title>HakimGizaw</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <a href="#">HakimGizaw</a>
+        </div>
+        <div class="lists">
+          <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li class="hidden1"><a href="Pages/Medical_record.html">Record</a></li>
+            <li class="hidden2"><a href="Pages/Immunization.html">Immunization</a></li>
+            <li class="hidden3"><a href="Pages/Lab.html">Lab</a></li>
+            <li class="hidden4"><a href="Pages/medication.html">Medication</a></li>
+          </ul>
+        </div>
+        <div class="search1">
+          <input type="search" placeholder="Type Something . . .">
+          <i class="fa fa-magnifying-glass"></i>
+        </div>
+        <div class="btn">
+          <button onclick="logout_fun()">Logout</button>
+        </div>
+      </nav>
+        <div class="content">
+          <div class="left">
+            <h1>Personalized <br><span>Health</span><br> Dashboard</h1>
+            <p>
+              A personalized health dashboard is a secure online platform that  you a centralized
+              view of your own health information. It's like a digital command center for your 
+              well-being.
+            </p>
+            <div class="btns">
+              <button>Join US</button>
+            </div>
+          </div>
+  
+          <div class="right">
+			        <div class="form">
+              <h2>Login Below!</h2>
+  
+              <div class="email">
+                <input type="text" id="username" placeholder="Username" value="" /> 
+                <i class="fa fa-user"></i>
+              </div> 
+  
+              <div class="password">
+                <input type="password" id="password" placeholder="Password" value="" />
+                <i class="fa fa-lock"></i>
+              </div>
+  
+              <button type="submit" onclick="login_fun()" value="submit">Login</button>
+  
+              <div class="more">
+                <p>Don't have an account? <a href="#">Sign Up</a></p>
+              </div>
+  
+              <div class="socials">
+                <p>Login With</p>
+                <ul>
+                  <li><i class="fab fa-facebook"></i></li>
+                  <li><i class="fab fa-twitter"></i></li>
+                  <li><i class="fab fa-instagram"></i></li>
+                  <li><i class="fab fa-skype"></i></li>
+                  <li><i class="fab fa-google"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
